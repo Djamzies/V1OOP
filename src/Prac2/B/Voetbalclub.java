@@ -4,7 +4,11 @@ public class Voetbalclub {
     private String clubnaam;
 
     public Voetbalclub(String club) {
-        clubnaam = club;
+        if (club == null || club == "") {
+            clubnaam = "FC";
+        } else {
+            clubnaam = club;
+        }
     }
 
     private Integer aantalGewonnen = 0;
@@ -18,6 +22,10 @@ public class Voetbalclub {
             aantalGelijk = aantalGelijk + 1;
         if (ch == 'v')
             aantalVerloren = aantalVerloren + 1;
+    }
+
+    public String getNaam() {
+        return clubnaam;
     }
 
     public Integer aantalPunten() {
