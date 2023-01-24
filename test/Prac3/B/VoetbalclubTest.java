@@ -1,3 +1,5 @@
+package Prac3.B;
+
 import Prac2.B.Voetbalclub;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
